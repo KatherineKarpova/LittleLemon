@@ -10,4 +10,6 @@ __pycache__/
 .env
 db.sqlite3
 .DS_Store
-EOF
+EOF__pycache__/
+*.py[cod]
+db.sqlite3
