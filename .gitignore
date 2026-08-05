@@ -1,0 +1,7 @@
+workspace/Include/
+workspace/Lib/
+workspace/Scripts/
+workspace/pyvenv.cfg
+__pycache__/
+*.py[cod]
+.env
