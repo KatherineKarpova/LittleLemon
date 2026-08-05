@@ -1,0 +1,13 @@
+cat > .gitignore <<'EOF'
+workspace/Include/
+workspace/Lib/
+workspace/Scripts/
+workspace/pyvenv.cfg
+workspace/share/
+
+__pycache__/
+*.py[cod]
+.env
+db.sqlite3
+.DS_Store
+EOF
