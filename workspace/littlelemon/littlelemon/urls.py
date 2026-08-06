@@ -29,11 +29,14 @@ booking_router.register(r'tables', views.BookingViewSet)
 
 
 urlpatterns = [
+    # static homepage
+    path("", views.index, name="index"),
     path('admin/', admin.site.urls),
+    # user api /users/ & /users/<id>/
     path('', include(user_router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace="rest_framework")),
     path('api/', include('restaurant.urls')),
-    path('restaurant/booking', include(booking_router.urls)),
+    path('restaurant/booking/', include(booking_router.urls)),
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.authtoken'))
 ]

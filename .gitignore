@@ -1,15 +1,16 @@
-cat > .gitignore <<'EOF'
+# Virtual environments
+.venv/
 workspace/Include/
 workspace/Lib/
 workspace/Scripts/
-workspace/pyvenv.cfg
 workspace/share/
+workspace/pyvenv.cfg
 
+# Python
 __pycache__/
 *.py[cod]
+
+# Local files
 .env
 db.sqlite3
 .DS_Store
-EOF__pycache__/
-*.py[cod]
-db.sqlite3
