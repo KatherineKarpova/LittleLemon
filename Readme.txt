@@ -4,6 +4,9 @@ Little Lemon Web Application
 Project directory:
 workspace/littlelemon
 
+Install dependencies:
+python -m pip install -r requirements.txt
+
 Database setup
 --------------
 
