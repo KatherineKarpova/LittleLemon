@@ -1,0 +1,7 @@
+{{
+  "python.defaultInterpreterPath": "C:\\Users\\kathe\\little-lemon-capstone\\workspace\\Scripts\\python.exe",
+  "python.analysis.extraPaths": [
+    "C:\\Users\\kathe\\little-lemon-capstone\\workspace\\littlelemon"
+  ]
+}
+}
