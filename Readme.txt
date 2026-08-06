@@ -4,8 +4,18 @@ Little Lemon Web Application
 Project directory:
 workspace/littlelemon
 
-Run the application:
+Database setup
+--------------
+
+Copy .env.example to .env and enter the credentials for your local
+MySQL installation.
+
+Create a MySQL database named LittleLemon, then run:
+
 python manage.py migrate
+
+Run the application:
+
 python manage.py runserver
 
 Static homepage
