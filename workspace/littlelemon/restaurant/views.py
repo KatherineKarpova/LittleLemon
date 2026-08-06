@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.auth.models import User
 from rest_framework import viewsets, generics
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 from .serializers import UserSerializer, MenuItemSerializer, BookingSerializer
 from .models import MenuItem, Booking
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
@@ -19,7 +19,8 @@ class UserViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
 
 class MenuItemView(generics.ListCreateAPIView):
-    permission_classes = [IsAuthenticated]
+    # Only authenticated users can post but anyone can get with read only
+    permission_classes = [IsAuthenticatedOrReadOnly]
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
 
